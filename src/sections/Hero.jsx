@@ -72,14 +72,23 @@ export const Hero = () => {
 
                     {/* Call to actions */}
                     <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                        <Button size="lg">
+                        <Button 
+                            size="lg"
+                            onClick={() =>
+                                document.getElementById("contact")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                                }>
                             Contact Me <ArrowRight className="w-5 h-5"/>
                         </Button>
-
-                        <AnimatedBorderButton>
+                        
+                        <a href="/CV_William_He_Yu___ENG.pdf"
+                            download="William_He_Yu_CV.pdf">
+                            <AnimatedBorderButton>
                             <Download className="w-5 h-5"/>
                             Download CV
-                        </AnimatedBorderButton>
+                            </AnimatedBorderButton>
+                        </a>
+                        
                     </div>
 
                     {/* Social Links */}
@@ -88,8 +97,8 @@ export const Hero = () => {
                             Find me on:
                         </span>
                         {[
-                            {icon: Github, href: "#"},
-                            {icon: Linkedin, href: "#"},
+                            {icon: Github, href: "https://github.com/PPandaPP"},
+                            {icon: Linkedin, href: "https://www.linkedin.com/in/william-he-yu/"},
                             // {icon: Twitter, href: "#"}
                         ].map((social, idx)=>(
                             <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300" >

@@ -43,7 +43,14 @@ export const Navbar = () => {
 
                 {/* Call to Action Button */}
                 <div className="hidden md:block">
-                    <Button size = "sm">Contact Me</Button>
+                    <Button 
+                    size = "sm"
+                    onClick={() =>
+                                document.getElementById("contact")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                                }>
+                        Contact Me
+                    </Button>
                 </div>
 
 

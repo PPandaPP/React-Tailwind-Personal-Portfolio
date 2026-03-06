@@ -28,7 +28,7 @@ const contactInfo = [
         icon: MapPin,
         label: "Location",
         value: "Alajuela, Costa Rica",
-        href: "#",
+        href: "https://maps.google.com/?q=Alajuela,Costa Rica",
     },
 ]
 
