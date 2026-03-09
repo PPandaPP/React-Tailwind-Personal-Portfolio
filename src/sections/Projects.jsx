@@ -1,5 +1,5 @@
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { ArrowUpRight, Github } from "lucide-react";
-import {AnimatedBorderButton} from "@/components/AnimatedBorderButton"
 
 
 const projects = [
@@ -8,8 +8,8 @@ const projects = [
         description: "description for casacomfort vip management app",
         image:"/projects/Casacomfort_App.png",
         tags: ["Oracle Apex", "HTML", "CSS", "Javascript"],
-        link: "#",
-        github: "#",
+        link: "https://g15d04f20c53ff3-casacomfort.adb.sa-bogota-1.oraclecloudapps.com/ords/r/casacomfort_prod/casacomfort/login",
+        github: "",
     },
 
     {
@@ -17,17 +17,17 @@ const projects = [
         description: "description for ITSM Helpdesk Application",
         image:"/projects/ITSM_App.png",
         tags: ["Nest.js", "Node.js", "HTML", "CSS", "Typescript", "Firebase"],
-        link: "#",
-        github: "#",
+        link: "",
+        github: "https://github.com/Santin203/ITSM",
     },
 
     {
         title: "Home Owners Association App",
         description: "description for Home Owners Association App",
         image:"/projects/HOA_App.png",
-        tags: ["Nest.js", "Node.js", "HTML", "CSS", "Typescript", "Firebase"],
-        link: "#",
-        github: "#",
+        tags: ["Next.js", "Node.js", "HTML", "CSS", "Typescript", "Firebase"],
+        link: "",
+        github: "https://github.com/Santin203/HOA-System",
     },
 ]
 
@@ -73,12 +73,12 @@ export const Projects = () => {
                             <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60"/>
                             {/* Overlay links */}
                             <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <a href={project.link} className="p-3 rounded-full glass-strong hover:bg-primary hover:text-primary-foreground transition-all">
+                                {project.link != "" && <a href={project.link} className="p-3 rounded-full glass-strong hover:bg-primary hover:text-primary-foreground transition-all">
                                     <ArrowUpRight className="w-5 h-5"/>
-                                </a>
-                                <a href={project.github} className="p-3 rounded-full glass-strong hover:bg-primary hover:text-primary-foreground transition-all">
+                                </a>}
+                                {project.github != "" &&<a href={project.github} className="p-3 rounded-full glass-strong hover:bg-primary hover:text-primary-foreground transition-all">
                                     <Github className="w-5 h-5"/>
-                                </a>
+                                </a>}
                             </div>
                         </div>
 
