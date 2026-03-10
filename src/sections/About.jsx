@@ -1,5 +1,5 @@
 
-import { Code2, Rocket, Users, Award } from "lucide-react";
+import { Code2, BookOpen, Users, Award } from "lucide-react";
 const highlights =[
     {
         icon: Code2,
@@ -8,10 +8,10 @@ const highlights =[
         "Writing clean, maintainable code that follows best practices and design patterns."
     },
     {
-        icon: Rocket,
-        title:"Performance Optimization",
+        icon: BookOpen,
+        title:"Fast Learning",
         description:
-        "Optimizing web applications for speed and efficiency, including techniques like lazy loading and code splitting."
+        "Quickly understanding new concepts, tools, and technologies, and efficiently applying new knowledge to solve problems and improve performance."
     },
     {
         icon: Users,
@@ -58,14 +58,21 @@ export const About = () => {
                             </p>
 
                             <p>
-                                This would be another paragraph about me but I don't know what to put here just yet.
+                                Fast and humble learner with a strong commitment to continuous improvement and skill development. 
+                                Strong pattern recognition and problem-solving abilities that enable effective analysis of complex challenges and identification of practical solutions.
+                                A collaborative mindset that supports effective teamwork, open communication, and shared success in group environments.
+                                Experience and comfort working in culturally diverse settings encourage appreciation for different perspectives that strengthen creativity and collaboration.
+                                Curiosity, adaptability, and dedication to learning drive consistent effort to contribute meaningful value to teams and projects.
+
                             </p>
                         </div>
 
-                        <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
-                            <p className="text-lg font-medium italic text-foreground">
-                                "This would be a cool mission statement which I don't have just yet."
+                        <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300 flex justify-between">
+                            <p className="text-xl font-bold italic text-foreground">
+                                "Stay hungry, Stay foolish"
                             </p>
+                            <br/>
+                            <p className="text-lg font-bold italic text-foreground">— Steve Jobs</p>
                         </div>
                     </div>
 

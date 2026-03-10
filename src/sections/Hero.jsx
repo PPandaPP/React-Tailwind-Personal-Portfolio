@@ -63,9 +63,9 @@ export const Hero = () => {
                         <p 
                         className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200"
                         >
-                            Hi, I'm William He Yu - a passionate Computer Science graduate from Texas Tech University-Costa Rica.
+                            Hi, I'm William He Yu (yes it acronyms to WHY)- a passionate Computer Science graduate from Texas Tech University-Costa Rica.
                             With a strong foundation in software development and a keen eye for design,
-                            I specialize in creating seamless user experiences. My journey in tech has been driven by a love for problem-solving and 
+                            I am motivated in creating seamless user experiences. My journey in tech has been driven by a love for problem-solving and 
                             a commitment to crafting elegant solutions. Let's connect and build something amazing together!
                         </p>
                     </div>
